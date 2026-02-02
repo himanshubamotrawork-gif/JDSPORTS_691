@@ -15,137 +15,143 @@ gtag('config', 'G-GBRHJC14D3', {
   debug_mode: false
 });
 </script>
-  <style>
-    :root {
-      --primary: #0071ce;
-      --primary-dark: #005aa3;
-      --bg: #f5f9ff;
-      --text: #111;
-      --muted: #666;
-    }
+ <style>
+  :root {
+    --primary: #1e90ff;      /* blue for bullets */
+    --bg: #000;              /* black background */
+    --card-bg: #0f0f0f;
+    --text: #fff;            /* white text */
+    --muted: #aaa;
+    --border: #1f1f1f;
+  }
 
-    * { box-sizing: border-box; }
+  * { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      overflow-x: hidden;
-    }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+  }
 
-    .container {
-      max-width: 720px;
-      margin: auto;
-      padding: 32px 20px 60px;
-      text-align: center;
-    }
+  .container {
+    max-width: 720px;
+    margin: auto;
+    padding: 32px 20px 60px;
+    text-align: center;
+  }
 
-    .brand {
-      font-weight: 700;
-      font-size: 22px;
-      margin-bottom: 24px;
-      color: var(--primary);
-    }
+  .brand {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 24px;
+    color: #fff;
+  }
 
-    .card-wrap {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 28px;
-    }
+  .card-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
 
-    .card-mask {
-      background: var(--bg);
-      padding: 14px;
-      border-radius: 20px;
-      overflow: hidden;
-    }
+  .card-mask {
+    background: #000;
+    padding: 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+  }
 
-    .card-wrap img {
-      width: 260px;
-      max-width: 100%;
-      display: block;
-      border-radius: 16px;
-    }
+  .card-wrap img {
+    width: 260px;
+    max-width: 100%;
+    display: block;
+    border-radius: 16px;
+  }
 
-    h1 {
-      font-size: 32px;
-      margin: 0 0 12px;
-    }
+  h1 {
+    font-size: 32px;
+    margin: 0 0 12px;
+  }
 
-    h1 span { color: var(--primary); }
+  h1 span { color: #fff; }
 
-    .sub {
-      color: var(--muted);
-      font-size: 16px;
-      margin-bottom: 28px;
-    }
+  .sub {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
 
-    .cta {
-      background: linear-gradient(180deg, #1a8cff, #0071ce);
-      color: #fff;
-      border: none;
-      padding: 18px 36px;
-      font-size: 18px;
-      font-weight: 700;
-      border-radius: 999px;
-      cursor: pointer;
-      box-shadow: 0 14px 30px rgba(0,113,206,.35);
-    }
+  /* CTA BUTTONS */
+  .cta {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 18px 36px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
 
-    .cta:hover {
-      background: var(--primary-dark);
-    }
+  .cta:hover {
+    background: #fff;
+    color: #000;
+  }
 
-    .how {
-      margin-top: 48px;
-    }
+  .how {
+    margin-top: 48px;
+  }
 
-    .how h2 {
-      margin-bottom: 24px;
-    }
+  .how h2 {
+    margin-bottom: 24px;
+  }
 
-    .step {
-      background: #fff;
-      border-radius: 18px;
-      padding: 18px 20px;
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      margin-bottom: 14px;
-      box-shadow: 0 8px 18px rgba(0,0,0,.06);
-      text-align: left;
-    }
+  .step {
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 18px 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 14px;
+    border: 1px solid var(--border);
+    text-align: left;
+  }
 
-    .num {
-      min-width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: #fff;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  /* BLUE BULLETS */
+  .num {
+    min-width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .final-cta {
-      margin-top: 32px;
-    }
+  .final-cta {
+    margin-top: 32px;
+  }
 
-    .footer {
-      font-size: 12px;
-      color: #888;
-      margin-top: 40px;
-    }
+  .footer {
+    font-size: 12px;
+    color: #777;
+    margin-top: 40px;
+  }
 
-    /* Desktop message */
-    #desktop-message {
-      display: none;
-      text-align: center;
-      padding: 80px 20px;
-    }
-  </style>
+  /* Desktop message */
+  #desktop-message {
+    display: none;
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+  }
+</style>
+
 </head>
 
 <body>
