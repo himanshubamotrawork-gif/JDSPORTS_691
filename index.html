@@ -87,18 +87,24 @@ gtag('config', 'G-GBRHJC14D3', {
 
   /* JD-STYLE CTA BUTTON */
   .cta {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 16px 34px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 999px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.25s ease;
-  }
+  background: #000;
+  color: #fff;
+  border: none;
+  min-width: 280px;     /* equal width for both buttons */
+  height: 56px;         /* equal height */
+  padding: 0 32px;      /* horizontal breathing room */
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
 
   .cta:hover {
     background: #222;
